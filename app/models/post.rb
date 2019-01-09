@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-  validates :title,
-  validates :content,
+  validates :title, presence: true
+  validates :content, length: {minimum: 100}
   validates :category, inlcusion: {'Fiction', 'Non-Fiction'}
 end
