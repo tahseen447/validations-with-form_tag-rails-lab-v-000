@@ -60,7 +60,7 @@ Rails.application.routes.draw do
   get "/authors/:id/edit", to: "authors#edit", as: "edit_author"
   patch "/authors/:id", to: "authors#update"
 
-  get "/authors/new", to: "authors#new", as: "new_author"
+  get "/posts/new", to: "posts#new", as: "new_post"
   post "/authors", to: "authors#create"
   get "/authors/:id", to: "authors#show", as: "author"
   get "/authors/:id/edit", to: "authors#edit", as: "edit_author"
